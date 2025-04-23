@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        <dialog id="editTaskDialog">
+            <form action="" class="taskForm" id="editTaskForm">
+                <div class="taskInput">
+                    <div class="dialogHeader">
+                        <input class="taskNameForm" type="text" id="edittaskName" name="taskName"  placeholder="Task Name" required>
+                        <div class="editcloseButton" id="editCloseButton"></div>
+                    </div>
+                    <textarea class="taskDescriptionForm" id="edittaskDescription" name="taskDescription (optional)" placeholder="Description (optional)"></textarea>
+                </div>
+                <div class="taskDetails">
+                    <div>
+                        <label for="dueDate">Due Date:</label>
+                        <input type="date" id="editdueDate" name="dueDate">
+                        <label for="priority">Priority:</label>
+                        <select id="editpriorityTask" name="priorityTask" required>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit" class="submitBtn" id="saveBtn">Save</button>
+                    </div>
+                </div>
+            </form>
+        </dialog>
+        <dialog id="taskDialog">
+            <form action="" class="taskForm" id="taskForm">
+                <div class="taskInput">
+                    <div class="dialogHeader"> 
+                        <input class="taskNameForm" type="text" id="taskName" name="taskName"  placeholder="Task Name" required>
+                        <div class="closeButton" id="closeButton"></div>
+                    </div>
+                    <textarea class="taskDescriptionForm" id="taskDescription" name="taskDescription" placeholder="Description (optional)"></textarea>
+                </div>
+                <div class="taskDetails">
+                    <div>
+                        <label for="dueDate">Due Date:</label>
+                        <input type="date" id="dueDate" name="dueDate">
+                        <label for="priority">Priority:</label>
+                        <select id="priorityTask" name="priorityTask" required>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit" class="submitBtn" id="submit">Add Task</button>
+                    </div>
+                </div>
+            </form>
+        </dialog>
+        <div class="sidebar">
+            <div class="profile">
+                <img src="./images/profile-pic.jpg" alt="Profile Picture" id="profile-pic">
+                <h3 id="username">Username</h3>                
+            </div>
+            <nav>
+                <button id="addTask">
+                    <div class="plus"></div>
+                    <span>Add Task</span>
+                </button>
+                <hr>
+                <button id="allTasks">
+                    All Tasks
+                </button>
+                <button id="today">
+                    Today
+                </button>
+                <button id="upcoming">
+                    Upcoming
+                </button>
+                <button id="calendar">
+                    Calendar
+                </button>
+                <button id="completed">
+                    Completed
+                </button>
+                <hr>
+            </nav>
+
+        </div>
+        <div class="main">
+
+        </div>
+    </div>
+    <footer>
+    </footer>
+</body>
+</html>
